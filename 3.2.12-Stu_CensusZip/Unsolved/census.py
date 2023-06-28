@@ -18,18 +18,29 @@ with open(census_csv) as csvfile:
 
     for row in csvreader:
         # Add place
+        place.append(row[0])
 
         # Add population
+        population.append(row[1])
 
         # Add per capita income
+        income.append(row[4])
 
         # Add poverty count
+        poverty_count.append(row[8])
 
         # Determine poverty rate to 2 decimal places, convert to string
+        percent = ((float(row[8])/float(row[1])) * 100)
+        percent = f"{percent:.2f}%"
+        poverty_rate.append(percent)
 
         # Split the place into county and state
+        county1, state1 = row[0].split(", ")
+        county.append(county1)
+        state.append(state1)
 
 # Zip lists together
+zipped = zip(place, population, income, poverty_count, poverty_rate, county, state)
 
 # Set variable for output file
 output_file = os.path.join("census_final.csv")
@@ -43,3 +54,5 @@ with open(output_file, "w", newline='') as datafile:
                     "County", "State"])
 
     # Write in zipped rows
+    for row in zipped:
+        writer.writerow(row)
