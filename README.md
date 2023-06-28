@@ -1,0 +1,2 @@
+# school
+various bootcamp exercises
