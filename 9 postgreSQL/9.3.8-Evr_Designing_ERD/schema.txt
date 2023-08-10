@@ -1,0 +1,38 @@
+-- Use the following starter code to begin creating a conceptual ERD --
+https://app.quickdatabasediagrams.com/#/
+
+Trainers as t
+-
+trainer_id PK int
+trainer_first_name string
+trainer_last_name string
+trainer_address_1 string
+trainer_address_2 NULL string
+trainer_address_3 NULL string
+
+Members as m
+-
+member_id PK int
+member_first_name string
+member_last_name string
+member_address_1 string
+member_address_2 NULL string
+member_address_3 NULL string
+
+Gym
+-
+gym_id PK int
+gym_name string
+gym_address_1 string
+gym_address_2 NULL string
+gym_address_3 NULL string
+
+Schedule
+-
+time_id PK
+gym_id int FK >- Gym.gym_id
+member_id int FK >- m.member_id
+trainer_id int FK >- t.trainer_id
+day_of_week datetime
+hour_of_day datetime
+cost money
