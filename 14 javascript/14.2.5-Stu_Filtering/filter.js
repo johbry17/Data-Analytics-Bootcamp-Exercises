@@ -46,3 +46,23 @@ console.log(team);
 // Determine how many players made the cut
 // Display the results
 console.log(`Number of players that made the team: ${team.length}`)
+
+// Alternate Version:
+// // Create a custom function to return players who made the team
+// function madeCut(player) {
+//   // return player.madeTeam == true;
+//   // A more concise way to express a boolean conditional
+//   return player.madeTeam;
+// }
+
+// // Call the custom function with filter()
+// let playersOnTeam = roster.filter(madeCut);
+
+// // Display the results
+// console.log(playersOnTeam);
+
+// // Determine how many players made the cut
+// let numberOfPlayers = playersOnTeam.length;
+
+// // Display the results
+// console.log(`${numberOfPlayers} players made the team.`);

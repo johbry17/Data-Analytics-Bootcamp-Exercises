@@ -47,6 +47,36 @@ for (let i=0; i < movies.length; i++) {
 
 }
 
+// ALTERNATE VERSION !!that is far better!!
+// // For loop to go through all movies
+// for (let i = 0; i < movies.length; i++) {
+//   // Variable to hold current movie in loop
+//   let movie = movies[i]
+//   // Increment sum variable by amount of profit
+//   sum += movie.profit
+
+//   // Conditional statement to determine array assignment
+//   if (movie.year < 1940) {
+//     movies1930s.push(movie);
+//   } else if (movie.year < 1950) {
+//     movies1940s.push(movie);
+//   } else if (movie.year < 1960) {
+//     movies1950s.push(movie);
+//   } else if (movie.year < 1970) {
+//     movies1960s.push(movie);
+//   } else if (movie.year < 1980) {
+//     movies1970s.push(movie);
+//   } else if (movie.year < 1990) {
+//     movies1980s.push(movie);
+//   } else if (movie.year < 2000) {
+//     movies1990s.push(movie);
+//   } else if (movie.year < 2010) {
+//     movies2000s.push(movie);
+//   } else {
+//     movies2010s.push(movie);
+//   }
+// }
+
 // Find the average profit
 let avg = sum / movies.length
 

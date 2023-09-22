@@ -7,9 +7,11 @@ let table = d3.select('table');
 // Use D3 to create a bootstrap striped table
 // http://getbootstrap.com/docs/3.3/css/#table-striped
 table.classed("table table-striped", true);
+// table.attr("class", "table table-striped");
 
 // Use D3 to select the table body
 let body = d3.select('table tbody');
+// let body = d3.select("tbody");
 
 // Append one table row `tr` to the table body
 let row = body.append("tr");

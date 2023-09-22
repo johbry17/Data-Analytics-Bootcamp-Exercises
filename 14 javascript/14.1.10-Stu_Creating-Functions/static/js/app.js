@@ -21,6 +21,17 @@ function variance(thing) {
     }
     return mean(squares)
 }
+// Alternate Version
+// function variance(arr) {
+//     let meanValue = mean(arr);
+//     let total = 0;
+  
+//     for (let i = 0; i < arr.length; i++) {
+//       total += (arr[i] - meanValue) ** 2;
+//     }
+//     let varianceValue = total / arr.length;
+//     return varianceValue;
+//   }
 
 
 

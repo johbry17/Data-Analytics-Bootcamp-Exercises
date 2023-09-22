@@ -52,5 +52,20 @@ let layout = {
     },
   };
 
+// ALTERNATE VERSION
+//   // Apply a title to the layout
+// let layout = {
+//     title: "Greek vs Roman gods search results",
+//     barmode: "group",
+//     // Include margins in the layout so the x-tick labels display correctly
+//     margin: {
+//       l: 50,
+//       r: 50,
+//       b: 200,
+//       t: 50,
+//       pad: 4
+//     }
+//   };
+
 // Render the plot to the div tag with id "plot"
 Plotly.newPlot("plot", data, layout);

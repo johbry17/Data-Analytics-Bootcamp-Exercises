@@ -49,6 +49,8 @@ function plot (averages){
 
 
 // Invoke the plot creating function
+// only the last plot will show on the webpage
+// but the console prints results for all
 plot(averages('rental_rate'));
 plot(averages('length'));
 plot(averages('replacement_cost'));
