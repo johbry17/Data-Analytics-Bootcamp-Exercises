@@ -28,10 +28,7 @@ function createFeatures(earthquakeData) {
 
 };
 
-
-// 3.
 // createMap() takes the earthquake data and incorporates it into the visualization:
-
 function createMap(earthquakes) {
   // Create the base layers.
   let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
