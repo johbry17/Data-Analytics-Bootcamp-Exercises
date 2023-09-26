@@ -16,21 +16,20 @@ function createMap(bikeStations) {
 
   // Create an overlayMaps object to hold the bikeStations layer.
   let overlayMaps = {
-    "Bike Stations": createMarkers(bikeStations)
+    "Bike Stations": bikeStations
   };
 
   // Create the map object with options.
   let map = L.map("map-id", {
     center: newYorkCoords,
     zoom: mapZoomLevel,
-    layers: [lightmap, createMarkers(bikeStations)]
+    layers: [lightmap, bikeStations]
   });
 
   // Create a layer control, and pass it baseMaps and overlayMaps. Add the layer control to the map.
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false,
   }).addTo(map);
-
 };
 
 // Create the createMarkers function.
@@ -45,7 +44,8 @@ function createMarkers(response) {
   // Loop through the stations array.
   for (let i = 0; i < stations.length; i++) {
     // For each station, create a marker, and bind a popup with the station's name.
-    let marker = L.marker([stations[i].lat, stations[i].lon]).bindPopup("<h3>" + stations[i].name + "<h3><h3>Capacity: " + stations[i].capacity + "</h3>");
+    let marker = L.marker([stations[i].lat, stations[i].lon])
+    .bindPopup("<h3>" + stations[i].name + "<h3><h3>Capacity: " + stations[i].capacity + "</h3>");
 
     // Add the marker to the bikeMarkers array.
     markers.push(marker);
@@ -56,22 +56,7 @@ function createMarkers(response) {
 
 };
 
-// interestingly, this creates clusters, but doesn't show you where they are on the map
-// totally invisible, put you can click on them to zoom in and see the individual markers
-// very weird
-// function createMarkers(response) {
-//   let markers = L.markerClusterGroup();
-
-//   response.data.stations.forEach(station => {
-//     let marker = L.marker([station.lat, station.lon]);
-//     marker.bindPopup(`<strong>${station.name}</strong><br>Capacity: ${station.capacity}`);
-//     markers.addLayer(marker);
-//   });
-
-//   return markers;
-// }
-
 // Perform an API call to the Citi Bike API to get the station information. Call createMarkers when it completes.
 d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_information.json").then(function(response){
-  createMap(response);
+  createMap(createMarkers(response));
 });
