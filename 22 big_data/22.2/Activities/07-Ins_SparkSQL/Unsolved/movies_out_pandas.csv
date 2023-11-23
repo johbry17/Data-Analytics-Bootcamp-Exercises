@@ -1,0 +1,40 @@
+,id,show_id,type,title,country,date_added,release_year,rating,duration
+0,155,s156,Movie,A Champion Heart,United States,14-Apr-20,2018,G,90 min
+1,227,s228,Movie,A Shaun the Sheep Movie: Farmageddon,"United Kingdom, France, Belgium, United States, China",14-Feb-20,2020,G,87 min
+2,408,s409,Movie,All Dogs Go to Heaven,"Ireland, United Kingdom, United States",1-Jun-20,1989,G,85 min
+3,485,s486,Movie,An American Tail,United States,1-Apr-18,1986,G,80 min
+4,486,s487,Movie,An American Tail: Fievel Goes West,United States,1-Apr-18,1991,G,75 min
+5,487,s488,Movie,An American Tail: The Mystery of the Night Monster,United States,1-Apr-18,1999,G,75 min
+6,488,s489,Movie,An American Tail: The Treasures of Manhattan Island,United States,1-Apr-18,2000,G,79 min
+7,708,s709,Movie,Balto,United States,1-Apr-18,1995,G,78 min
+8,709,s710,Movie,Balto 2: Wolf Quest,United States,1-Apr-18,2001,G,75 min
+9,710,s711,Movie,Balto 3: Wings of Change,United States,1-Apr-18,2004,G,78 min
+10,1203,s1204,Movie,Canvas,United States,11-Dec-20,2020,G,9 min
+11,1283,s1284,Movie,Charlotte's Web,United States,23-Nov-19,1973,G,94 min
+12,1325,s1326,Movie,Chicken Little,United States,16-Mar-16,2005,G,82 min
+13,1344,s1345,Movie,Chitty Chitty Bang Bang,"United Kingdom, United States",1-Jan-20,1968,G,146 min
+14,2152,s2153,Movie,Fiddler on the Roof,United States,1-Jul-20,1971,G,181 min
+15,2228,s2229,Movie,For the Love of Benji,United States,6-Mar-18,1977,G,84 min
+16,2233,s2234,Movie,Forbidden Planet,United States,1-Nov-19,1956,G,98 min
+17,2357,s2358,Movie,Garfield's Pet Force,"South Korea, United States",1-Jan-20,2009,G,78 min
+18,2396,s2397,Movie,Ghost of the Mountains,United States,13-Sep-17,2017,G,78 min
+19,2410,s2411,Movie,Gigi,United States,1-Nov-19,1958,G,115 min
+20,2545,s2546,Movie,Growing Up Wild,United States,19-Feb-17,2016,G,78 min
+21,3179,s3180,Movie,Jimmy Neutron: Boy Genius,United States,1-Jan-20,2001,G,83 min
+22,3256,s3257,Movie,Justin Bieber: Never Say Never,United States,1-Jan-18,2011,G,106 min
+23,4560,s4561,Movie,Océans,"France, Switzerland, Spain, United States, United Arab Emirates",19-Sep-19,2009,G,84 min
+24,5005,s5006,Movie,Pup Star,Canada,29-Oct-16,2016,G,92 min
+25,5007,s5008,Movie,Pup Star: World Tour,"Canada, Japan, United States",5-May-18,2018,G,87 min
+26,5295,s5296,Movie,Rugrats in Paris: The Movie,"Germany, United States",1-Oct-19,2000,G,79 min
+27,5767,s5768,Movie,Spookley the Square Pumpkin,United States,1-Sep-19,2004,G,47 min
+28,5988,s5989,Movie,Tarzan,United States,23-Jun-18,1999,G,89 min
+29,5989,s5990,Movie,Tarzan 2,United States,23-Jun-17,2005,G,72 min
+30,6758,s6759,Movie,The Pirate Fairy,United States,15-Jun-14,2014,G,78 min
+31,6761,s6762,Movie,The Pixar Story,United States,18-Nov-18,2007,G,89 min
+32,6769,s6770,Movie,The Polar Express,United States,1-Jan-21,2004,G,100 min
+33,6779,s6780,Movie,The Princess and the Frog,United States,16-Jul-19,2009,G,98 min
+34,6839,s6840,Movie,The Rugrats Movie,United States,1-Oct-19,1998,G,81 min
+35,7102,s7103,Movie,Tini: The New Life of Violetta,"Spain, Italy, Argentina",19-Feb-17,2016,G,99 min
+36,7103,s7104,Movie,Tinker Bell and the Legend of the NeverBeast,United States,17-May-15,2014,G,78 min
+37,7242,s7243,Movie,True Grit,United States,1-Jan-20,1969,G,128 min
+38,7628,s7629,Movie,Willy Wonka & the Chocolate Factory,"United States, East Germany, West Germany",1-Jan-20,1971,G,100 min
