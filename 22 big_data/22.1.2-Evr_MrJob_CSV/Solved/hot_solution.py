@@ -11,8 +11,8 @@ class Hot_Days(MRJob):
         if tmax and int(tmax) >= 100:
             yield name, 1
 
-    def reducer(self, name, hot):
-        yield name, sum(hot)
+    def reducer(self, key, value):
+        yield key, sum(value)
 
 
 if __name__ == "__main__":
